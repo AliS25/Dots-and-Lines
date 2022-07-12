@@ -1,8 +1,7 @@
-html, body { 
-    margin:0; 
-    padding:0; 
-    overflow:hidden 
-}
+/* Ali Sbeih - 7/12/22 - Lines and Dots Project */
+
+
+/* Position the svg element on the right half of the screen and give it a border */
 svg { 
     position:fixed; 
     top:0; 
@@ -11,6 +10,7 @@ svg {
     right:0 ; 
     border: 3px solid crimson;
 }
+/* Position the controls section on the left half of the screen and give it a border */
 #controls { 
     position:fixed; 
     top:0; 

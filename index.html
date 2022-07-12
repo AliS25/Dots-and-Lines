@@ -1,32 +1,47 @@
+<!-- Ali Sbeih - 7/12/22 - Lines and Dots Project -->
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- The character set to be used -->
 <meta charset="utf-8">
+<!-- The title of the page -->
 <title>Lines and dots</title>
+<!-- Link the css file -->
 <link rel="stylesheet" href="style.css"/>
+<!-- Link the script file -->
 <script src="script.js" defer></script>
     </head>
 
     <body>
+        <!-- The controls section that will take the left half of the screen -->
         <div id="controls">
+
+            <!-- Heading -->
         <h1>Lines and Dots</h1>
+        <!-- Paragraph -->
         <p>Create your initial graph by clicking to create a circle and highlighting two circles to connect them</p>
+        <!-- Label indicating what the input is for -->
         <label>Select the starting node</label>
+        <!-- Input that takes in a number -->
         <input type='number' id="start">
+        <!-- Label indicating what the input is for -->
         <label>Select the target node</label>
+        <!-- Input that takes in a number -->
         <input type='number' id="finish">
+        <!-- Line break -->
         <br>
-        <br>
+        <!-- Paragraph containing two buttons -->
         <p>Select <button id="BFS">Breadth First Search</button> or 
         <button id="DFS">Depth First Search</button></p>
-        <br>
+        <!-- Paragraph containing two buttons -->
         <p><button id="resetGraph">Reset Graph</button> or <button id="reset">Reset Graph Panel</button></p>
 
-
 </div>
-        <svg width="50%" height="100%"id='main'>
-        
-   
-   </svg>
+
+<!-- SVG element that will contain all the other SVG elements created in the JavaScript file for visualizing the graphs -->
+        <svg width="50%" height="100%"id='main'></svg>
     </body>
 </html>
