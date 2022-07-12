@@ -8,17 +8,22 @@
     </head>
 
     <body>
+        <div id="controls">
         <h1>Lines and Dots</h1>
         <p>Create your initial graph by clicking to create a circle and highlighting two circles to connect them</p>
         <label>Select the starting node</label>
-        <input type='number'>
+        <input type='number' id="start">
         <label>Select the target node</label>
-        <input type='number'>
+        <input type='number' id="finish">
         <br>
         <br>
-        <p>Select <button>Breadth First Search</button> or 
-        <button>Depth First Search</button></p>
+        <p>Select <button id="BFS">Breadth First Search</button> or 
+        <button id="DFS">Depth First Search</button></p>
+        <br>
+        <p><button id="resetGraph">Reset Graph</button> or <button id="reset">Reset Graph Panel</button></p>
 
+
+</div>
         <svg width="50%" height="100%"id='main'>
         
    
