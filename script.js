@@ -98,7 +98,7 @@ nodeCircle.addEventListener('click',function(){
                 edgeList.push(drawLine); 
 
                 //Add the line to the panel
-                panel.appendChild(drawLine)
+                document.querySelector('.edges').appendChild(drawLine)
 // Add the nodes to each other's adjacency lists
                 dummyNode.adjacencyList.push(graphList[i]);
                 graphList[i].adjacencyList.push(dummyNode);
