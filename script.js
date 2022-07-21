@@ -404,6 +404,10 @@ resetPage.addEventListener('click',function(){
     counter=0;
     //remove the foundMessage
     foundMessage.remove();
+    //Add the g element as the first element in svg which will contain the edges 
+    let edgegroup=document.createElementNS("http://www.w3.org/2000/svg","g")
+    edgegroup.setAttribute("class","edges")
+    document.querySelector('svg').appendChild(edgegroup)
 });
 // -------------------------------------------------------------------RESET GRAPH BUTTON--------------------------------------------------------------------------------
 //The variable resetGraph refers to the reset graph button
